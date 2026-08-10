@@ -1,66 +1,33 @@
 # GNSSensing-Dataset
 
-Open-source GNSS and LiDAR datasets collected via UAV for vegetation remote sensing.
+_Open-source GNSS and LiDAR datasets collected via UAV in Hong Kong for vegetation remote sensing_
 
-> This repository is for **data release only** (no source code).
+Unmanned Aerial Vehicles (UAVs) are valuable low-cost remote sensing platforms with exceptional temporal and spatial flexibility. Leveraging UAVs for remote sensing requires lightweight, power-efficient sensors. While airborne LiDAR is highly effective, using reflected Global Navigation Satellite System (GNSS) signals may offer a passive sensing alternative. GNSS provides continuous global coverage, and its signal properties strongly correlate with environmental objects in scattering, reflection, and attenuation. Moreover, low-cost, lightweight consumer-grade receivers can easily capture these signals. Despite these advantages, acquiring experimental datasets remains challenging due to platform construction complexities and local airspace regulations. To address this gap and advance UAV-based GNSS remote sensing, this repository provides an open-access dataset. The collection contains LiDAR measurements, raw GNSS RINEX data from an onboard dual-antenna system, and UAV flight logs in PX4 Ulog format, all captured across diverse vegetated areas in Hong Kong.
 
-## Overview
-- **Dataset name:** GNSSensing-Dataset
-- **Domain:** Vegetation remote sensing
-- **Modalities:** GNSS, LiDAR
-- **Collection platform:** UAV
-- **Current version:** `<version>`
-- **Status:** `<draft/public/archived>`
+## Table of Contents
+* [UAV Setup](#uav-setup)
+* [Repository Structure](#repository-structure)
+* [Dataset Summary](#dataset-summary)
+* [Acknowledgements](#acknowledgements)
+* [Related Publication](#related-publication)
+
+## UAV Setup
+The UAV platform for data collection is a Holybro X650 quadcopter. The platform is equipped with: 
+* A Pixhawk 6C flight controller
+* An M10 GPS module (not for sensing purposes)
+* A pair of SiK telemetry radios
+* An Nvidia Jetson Orin Nano
+* A Livox Mid-360 LiDAR
+* A pair of Ublox F9P GNSS receivers + L1/L2 band antennas
+  * Zenith antenna is an upward-facing Right-Hand-Circular-Polarized (RHCP) antenna
+  * Nadir antenna is a downward-facing Left-Hand-Circular-Polarized (LHCP) antenna
+
+[physical-system-architecture.pdf](https://github.com/user-attachments/files/30888012/physical-system-architecture.pdf)
 
 ## Repository Structure
 
-```text
-<root>/
-├── README.md
-├── LICENSE
-├── data/
-│   ├── raw/
-│   └── processed/
-├── metadata/
-└── docs/
-```
+## Dataset Summary
 
-## Dataset Description
-- **Geographic coverage:** `<region>`
-- **Temporal coverage:** `<start date> to <end date>`
-- **Coordinate reference system (CRS):** `<CRS>`
-- **File formats:** `<e.g., .las, .csv, .txt>`
-- **Key variables/attributes:** `<list>`
+## Acknowledgements
 
-## Collection and Processing
-- **Collection protocol:** `<sensor setup, flight plan, sampling details>`
-- **Preprocessing steps:** `<filtering, calibration, alignment, etc.>`
-- **Quality checks:** `<validation and QA/QC methods>`
-- **Known limitations:** `<missing data, noise, caveats>`
-
-## Access and Download
-- **How to access data:** `<direct links or release assets>`
-- **Approximate size:** `<size>`
-- **Integrity checks (optional):** `<checksums/hashes>`
-
-## Usage Notes
-- This repository provides data artifacts only; users should load and process files using their own analysis tools.
-- Please review metadata and limitations before analysis.
-
-## License
-This dataset is released under the license specified in [`LICENSE`](./LICENSE).
-
-## Citation
-If you use this dataset in publications, please cite:
-
-```bibtex
-@dataset{gnssensing_dataset,
-  title  = {GNSSensing-Dataset},
-  author = {<authors>},
-  year   = {<year>},
-  url    = {<repository or release URL>}
-}
-```
-
-## Contact
-For questions, open an issue or contact: `<maintainer email>`.
+## Related Publication
