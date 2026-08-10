@@ -22,7 +22,7 @@ The UAV platform for data collection is a Holybro X650 quadcopter. The platform 
   * Zenith antenna is an upward-facing Right-Hand-Circular-Polarized (RHCP) antenna
   * Nadir antenna is a downward-facing Left-Hand-Circular-Polarized (LHCP) antenna
 
-<img width="336" height="144" alt="physical-system-architecture" src="https://github.com/user-attachments/assets/cc6206c9-0276-4b6b-8b0e-18c0d5dac3d7" />
+<img width="100%" alt="UAV Setup" src="https://github.com/user-attachments/assets/d0cbedc6-be82-4249-b004-f65366475940" />
 
 ## Repository Structure
 
