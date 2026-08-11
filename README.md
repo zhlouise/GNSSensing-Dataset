@@ -26,7 +26,16 @@ The UAV platform for data collection is a Holybro X650 quadcopter. The platform 
 
 ## Repository Structure
 
+```
+location_date/
+└── flight_type(_number)/
+    ├── down_antenna_*.obs  # Raw RINEX data from the nadir LHCP antenna
+    ├── up_antenna_*.obs    # Raw RINEX data from the zenith RHCP antenna
+    └── *.ulg              # PX4 ULog file containing UAV flight logs
+```
+
 ## Dataset Summary
+
 
 ## Acknowledgements
 
